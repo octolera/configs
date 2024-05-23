@@ -1,0 +1,8 @@
+server{
+	listen 80;
+	server_name 127.0.0.2;
+	
+	location / {
+		return 302 https://www.youtube.com;
+}
+}
