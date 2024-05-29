@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cpu usage</title>
+<style>
+html { color-scheme: light dark; }
+body { width: 35em; margin: 0 auto;
+font-family: Tahoma, Verdana, Arial, sans-serif; }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+    var $md = $("#my_div");
+    setInterval(function(){
+    $('#my_div').load('cpu/')}, 2000)
+    });
+ </script>
+<body>
+<h1>CPU usage</h1>
+<div id="my_div">Yet not set</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[Unit]
+Description=cpuinfo
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/configs/lab06
+ExecStart=/bin/bash getCPU.sh
+Restart=always
+RestartSec=1s
+
+[Install]
+WantedBy=multi-user.target
